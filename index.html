@@ -1,98 +1,364 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Zach's Personal Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zachary Mays - Senior Data Scientist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            opacity: 0.95;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
+
+        .projects-banner {
+            background-color: #667eea;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        .projects-banner h2 {
+            color: white;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .project-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-link {
+            background-color: white;
+            color: #667eea;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .project-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            padding: 40px;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        .job-title {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 5px;
+        }
+
+        .date-range {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .skill-category {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .skill-category strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .education-item {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 40px 20px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            .content {
+                padding: 20px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images/lily_and_i.JPG" width="140" height="100" alt="Zachary Profile picture"></td>
-      <td>
-        <h1>Zachary Mays</h1>
-        <p><em>Market Analyst at <strong><a href="https://innovista-health.com/">Innovista Health Solutions</a></strong> </em></p>
-      </td>
-    </tr>
-  </table>
+    <div class="container">
+        <header>
+            <h1>Zachary Mays</h1>
+            <p>Senior Data Scientist</p>
+            <div class="contact-info">
+                <a href="tel:512-653-2088">📞 512-653-2088</a>
+                <a href="mailto:zachary.a.mays@gmail.com">✉️ zachary.a.mays@gmail.com</a>
+            </div>
+        </header>
 
-  <p>I am a Data Scientist. I love exploring the world through data and want to inspire others
-    to see the world through their data. </p>
-  <hr size="3">
-  <h3>Education</h3>
-  <ul>
-    <li><b><a href="https://carloslab.wp.txstate.edu/dr-carlos-shanley/">Texas State University</a></b> - M.S. in <em>Bacterial Genetics</em></li>
-    <li><b><a href="https://www.bio.txstate.edu">Texas State University</a></b> - B.S. in <em>Biology</em></li>
-    <li><b><a href="https://www.regentsaustin.org/">Regents School of Austin</a></b> - H.S.</li>
-  </ul>
-  <hr>
+        <div class="projects-banner">
+            <h2>My Projects</h2>
+            <div class="project-links">
+                <a href="https://planted.zachmays.com" class="project-link">🌱 Planted</a>
+                <a href="https://bookshelf.zachmays.com" class="project-link">📚 Bookshelf</a>
+            </div>
+        </div>
 
-  <h3>Experience</h3>
-  <table cellspacing="20">
-    <thead>
-      <tr>
-        <th>Dates</th>
-        <th>Work</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>July 2021 - Present</td>
-        <td>Data Analyst at Innovista Health Solutions</td>
-      </tr>
-      <tr>
-        <td>Feb 2021 - July 2021</td>
-        <td>Molecular Technologist at Innovative Genomics Laboratories</td>
-      </tr>
-      <tr>
-        <td>Jan 2019 - Dec 2020</td>
-        <td>Graduate Research Assistant at Texas State University</td>
-      </tr>
-    </tbody>
-  </table>
-  <hr>
+        <div class="content">
+            <section id="projects">
+                <h2>Projects</h2>
+                
+                <h3>ML Claims Processing Pipeline</h3>
+                <ul>
+                    <li>Lead a team to build an end-to-end SageMaker ML pipeline to process America's medicare and medicaid claims using features engineered from ICD9, ICD10, CPT, HCPCS, RBCS, other healthcare code sets and part A and B claim characteristics.</li>
+                </ul>
 
-  <h3>Skills</h3>
-  <table cellspacing="20">
-    <tr>
-      <td>
-        <table>
-          <tr>
-            <td>Python</td>
-            <td>⭐⭐⭐⭐</td>
-          <tr>
-            <td>SQL</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>R</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-    </tr>
-  </table>
-  <td>
-    <table>
-      <tr>
-        <td>Machine Learning</td>
-        <td>⭐⭐⭐</td>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>⭐⭐</td>
-      </tr>
-      <tr>
-        <td>CSS</td>
-        <td>⭐</td>
-      </tr>
-    </table>
-  </td>
-  </table>
-  <br>
-  <hr size="3">
-  <a href="hobbies.html">My Hobbies</a>
-  <a href="contact.html">Contact Me</a>
-  <br>
+                <h3>Member Risk and Opportunity Pipeline</h3>
+                <ul>
+                    <li>Created a Machine Learning model to predict the risk and opportunity of health insurance members for ACO populations with an accuracy of 98% saving a $1 million a year and bringing the predictions in-house.</li>
+                </ul>
+
+                <h3>Special Reports on Member Trends</h3>
+                <ul>
+                    <li>Produced special reports on trends in our member population such as the effect of birth month on vaccination status in children. Presented findings to C-suite and VP level.</li>
+                </ul>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <strong>Machine Learning</strong>
+                        Regression, Cross Validation, Classification, Recommendation, and NLP
+                    </div>
+                    <div class="skill-category">
+                        <strong>Python Libraries</strong>
+                        Scipy, Pandas, Seaborn, Sci-kit Learn, Numpy, Pyspark, MLFlow, SHAP
+                    </div>
+                    <div class="skill-category">
+                        <strong>Programming Languages</strong>
+                        R, Python, HTML, CSS, JavaScript, Bash
+                    </div>
+                    <div class="skill-category">
+                        <strong>Data Management</strong>
+                        ETL, Data Governance, Relational Databases
+                    </div>
+                    <div class="skill-category">
+                        <strong>Database Language</strong>
+                        SQL
+                    </div>
+                    <div class="skill-category">
+                        <strong>Data Reporting Tools</strong>
+                        Tableau, PowerBI
+                    </div>
+                    <div class="skill-category">
+                        <strong>Other Tools</strong>
+                        Microsoft Office, Git, Visual Studio Code, Pycharm, AWS SageMaker
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience">
+                <h2>Experience</h2>
+
+                <h3>GDIT, Remote</h3>
+                <p class="job-title">Senior Data Scientist</p>
+                <p class="date-range">September 2022 - PRESENT</p>
+                <ul>
+                    <li>Engineered features from all aspects of Medicare claims data for predictive modeling in SageMaker using Pyspark and AWS Glue.</li>
+                    <li>Lead a team to tune models increasing the performance >20% over existing human-lead processes using a tuned and boosted randomized forest model.</li>
+                    <li>Implemented models in an AWS-hosted ML pipeline that processes over 100 million records daily.</li>
+                    <li>Advised on the creation of a dashboard to monitor performance drift in QuickSight.</li>
+                </ul>
+
+                <h3>Innovista Health Solutions, Remote</h3>
+                <p class="job-title">Market Analyst</p>
+                <p class="date-range">July 2021 - September 2022</p>
+                <ul>
+                    <li>Developed a risk assessment and opportunity ML algorithm for Medicare and Commercial members using data collected by nursing staff. The model was applied to palliative, hospice, dialysis, primary care, and in-network patients.</li>
+                    <li>Analyzed population data and found statistically relevant opportunities for quality improvement.</li>
+                    <li>Shared data visualizations and whitepapers with C-suite executives and VPs in my department to demonstrate that we could bring AI/ML in-house.</li>
+                    <li>Advised on the use of Sentiment Analysis of incoming Documents to increase the speed of ETL from sFTP servers into a local SQL Server.</li>
+                </ul>
+
+                <h3>Innovative Genomics Laboratories, San Antonio, TX</h3>
+                <p class="job-title">Molecular Technologist</p>
+                <p class="date-range">February 2021 - July 2021</p>
+                <ul>
+                    <li>Lead validation testing, compiled raw data files, and statistically analyzed data for a PGx panel.</li>
+                    <li>Managed a team of 3 scientists working on 6 different projects for molecular validations, ensured data integrity and consistency across tests.</li>
+                    <li>Presented findings to the Medical Director to launch the panel.</li>
+                    <li>Authored detailed test procedures and taught lab personnel to perform the tests.</li>
+                </ul>
+
+                <h3>Texas State University, San Marcos</h3>
+                <p class="job-title">Graduate Research Assistant</p>
+                <p class="date-range">January 2020 - December 2021</p>
+                <ul>
+                    <li>Extracted, sequenced, and analyzed over 300 genes and 20 genomes from bacteria associated with an endangered beetle for the USFWS resulting in a publication in an academic journal. <a href="https://pubmed.ncbi.nlm.nih.gov/34494105/" target="_blank" style="color: #667eea;">View Publication</a></li>
+                    <li>Leveraged the STAR cluster supercomputer to align and annotate over 100Gb of metagenomic data from insects and their environments using Bash and R scripts such as vegan and phyloseq.</li>
+                    <li>Performed multiple analyses on genetic, genomic, and metagenomic data using the DADA2 pipeline, nBLAST, and MicrobiomeAnalyst.</li>
+                </ul>
+
+                <h3>Texas State University, San Marcos</h3>
+                <p class="job-title">Graduate Instructional Assistant</p>
+                <p class="date-range">August 2018 - May 2021</p>
+                <ul>
+                    <li>Prepared and led undergraduate classes including: Introductory Biology, Medical Microbiology, Applied Biotechnology, and Bacterial Genetics.</li>
+                </ul>
+
+                <h3>GoScribes, New Braunfels</h3>
+                <p class="job-title">ER Medical Scribe</p>
+                <p class="date-range">January 2017 - January 2018</p>
+                <ul>
+                    <li>Followed medical doctors in the ER and provided an accurate and detailed record of the patient's visit in addition to inputting that information into an Electronic Medical Record through dictation.</li>
+                </ul>
+
+                <h3>Seton Medical Center Austin, Austin</h3>
+                <p class="job-title">Clinical Assistant</p>
+                <p class="date-range">May 2016 - October 2016</p>
+                <ul>
+                    <li>Cared for patients on the pulmonary and renal floor.</li>
+                    <li>Took vitals and assisted nurses with regular care.</li>
+                </ul>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <strong>University of Texas, Austin, TX</strong><br>
+                    Post Graduate Program in Artificial Intelligence and Machine Learning
+                </div>
+                <div class="education-item">
+                    <strong>Google Analytics Professional Certificate, Austin, TX</strong><br>
+                    Google Data Analytics
+                </div>
+                <div class="education-item">
+                    <strong>Texas State University, San Marcos, TX</strong><br>
+                    Master's in Science - Bacterial Genetics (2020)
+                </div>
+                <div class="education-item">
+                    <strong>Texas State University, San Marcos, TX</strong><br>
+                    Bachelor's in Science - Biology (2018)
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Zachary Mays. All rights reserved.</p>
+        </footer>
+    </div>
 </body>
-
 </html>
