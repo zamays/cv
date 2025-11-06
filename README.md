@@ -2,7 +2,7 @@
 
 **Senior Data Scientist**
 
-📞 512-653-2088 | ✉️ zachary.a.mays@gmail.com
+✉️ zachary.a.mays@gmail.com
 
 ## My Projects
 
