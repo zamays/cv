@@ -12,14 +12,14 @@
         }
 
         :root {
-            --primary-color: #667eea;
-            --secondary-color: #764ba2;
-            --accent-color: #f093fb;
+            --primary-color: #5568d3;
+            --secondary-color: #6b4598;
+            --accent-color: #8b5cf6;
             --text-dark: #2d3748;
             --text-light: #718096;
             --bg-light: #f7fafc;
             --success-color: #48bb78;
-            --info-color: #4299e1;
+            --info-color: #2563eb;
         }
 
         body {
@@ -192,10 +192,6 @@
             margin-bottom: 30px;
             padding-bottom: 15px;
             border-bottom: 3px solid transparent;
-            background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
             position: relative;
             font-weight: 700;
             letter-spacing: -0.5px;
@@ -208,7 +204,7 @@
             left: 0;
             width: 70px;
             height: 4px;
-            background: linear-gradient(90deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            background: var(--primary-color);
             border-radius: 3px;
         }
 
@@ -230,7 +226,7 @@
             transform: translateY(-50%);
             width: 6px;
             height: 60%;
-            background: linear-gradient(180deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            background: var(--primary-color);
             border-radius: 3px;
         }
 
@@ -301,7 +297,7 @@
             left: 0;
             width: 5px;
             height: 100%;
-            background: linear-gradient(180deg, var(--primary-color) 0%, var(--accent-color) 100%);
+            background: var(--primary-color);
             transition: width 0.3s;
         }
 
